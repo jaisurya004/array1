@@ -1,0 +1,165 @@
+Skip to content
+Chat history
+
+
+You said:
+algorithm for ascending order using array 
+ChatGPT said:
+Got it 👍 Here’s a simple algorithm to arrange an array in ascending order (easy to remember, exam-friendly).
+
+Algorithm: Ascending Order Using Array
+Step 1: Start
+Step 2: Read n (number of elements)
+Step 3: Read n elements into array a
+Step 4: Repeat i from 0 to n-1
+    Repeat j from i+1 to n-1
+    If a[i] > a[j]
+      Swap a[i] and a[j]
+Step 5: Display the array
+Step 6: Stop
+
+Explanation (short & clear)
+Compare each element with the next elements
+
+If the current element is greater, swap
+
+After all comparisons, the array becomes ascending order
+
+Example
+Input: 5
+Array: 4 2 5 1 3
+
+Output:
+1 2 3 4 5
+
+If you want:
+
+🔹 C program
+
+🔹 Bubble sort algorithm
+
+🔹 Explanation in Tanglish
+
+🔹 Dry run example
+
+Just tell me 😊
+
+You said:
+progam
+ChatGPT said:
+Sure 🙂 Here is the C program to arrange array elements in ascending order.
+
+#include <stdio.h>
+
+int main()
+{
+    int a[100], n, i, j, temp;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter array elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    // Sorting in ascending order
+    for(i = 0; i < n; i++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            if(a[i] > a[j])
+            {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+
+    printf("Array in ascending order:\n");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+
+    return 0;
+}
+Sample Input
+5
+4 2 5 1 3
+Sample Output
+1 2 3 4 5
+If you want this:
+
+🔹 Bubble sort only
+
+🔹 Without using extra variable
+
+🔹 Step-by-step explanation
+
+🔹 Tanglish explanation
+
+Tell me 👍
+
+You said:
+make it easy
+ChatGPT said:
+Okay 😊 let’s make it super easy 👍
+Simple logic, simple program 👌
+
+Easy C Program: Ascending Order
+#include <stdio.h>
+
+int main()
+{
+    int a[10], n, i, j, temp;
+
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for(i = 0; i < n; i++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            if(a[i] > a[j])
+            {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+
+    for(i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    return 0;
+}
+Very Simple Explanation
+Read numbers
+
+Compare two numbers
+
+If first is bigger → swap
+
+Print sorted array
+
+Example
+Input
+
+4
+9 3 7 1
+Output
+
+1 3 7 9
+If you want even simpler logic, or line-by-line explanation in Tanglish, tell me 😊
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
