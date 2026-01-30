@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int a[100],max,sm,i,n,temp;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+    }
+    max=a[0],sm=a[1];
+    for(i=1;i<n;i++){
+    if(max>a[i]){
+    temp=a[i];
+    sm=max;
+    max=a[i];
+    }
+    else if(max!=a[i] && a[i]<sm);
+}
+    
+    printf("%d %d",max,sm);
+
+    return 0;
+}
