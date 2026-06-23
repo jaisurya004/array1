@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,s=0,i,m=0;
+    scanf("%d",&n);
+   int a[n];
+   for(int i=0;i<n;i++){
+       scanf("%d",&a[i]);
+   }
+    for(int i=0;i<n;i++){
+        if(a[i]>m){
+            m=a[i];
+        s=i;
+        }
+    }
+    printf("%d ",a[s]);
+    for(int i=1;i<n+n;i++){
+        if(s+i<n)
+        printf("%d ",a[s+i]);
+        if(s-i>=0)
+        printf("%d ",a[s-i]);
+    }
+
+    return 0;
+}
+Sample 1
+
+Input:
+
+6
+10 20 30 40 50 60
+
+Output:
+
+60 50 40 30 20 10
+
+Explanation:
+
+Largest = 60
+Left side: 10 20 30 40 50
+Print from nearest to farthest: 50 40 30 20 10
+
+  Sample 2
+  Input:
+7
+15 25 95 35 45 55 65
+
+Output:
+
+95 25 35 15 45 55 65
