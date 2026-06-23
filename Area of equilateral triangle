@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n,s=0,i,m=0;
+    scanf("%d",&n);
+   float aq=sqrt(3)/4*n*n;
+   printf("%.2f ",aq);
+    return 0;
+}
+Sample Input 1
+6
+Sample Output 1
+15.59
